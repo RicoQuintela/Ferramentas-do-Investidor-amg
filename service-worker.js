@@ -1,4 +1,4 @@
-const SHELL_CACHE = 'investidor-amg-shell-v1';
+const SHELL_CACHE = 'investidor-amg-shell-v2';
 const DATA_CACHE = 'investidor-amg-data-v1';
 const APP_ROOT = new URL('./', self.registration.scope);
 const APP_INDEX = new URL('index.html', APP_ROOT).href;

@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "Base Quin",
-  "short_name": "Base Quin",
-  "description": "Aplicativo financeiro Base Quin",
+  "name": "Ferramentas do Investidor",
+  "short_name": "Ferramentas do Investidor",
+  "description": "Ferramentas do Investidor",
   "lang": "pt-BR",
   "start_url": "./",
   "scope": "./",
