@@ -440,7 +440,11 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 
 /* Abre as opções de modo de tela acima do botão */
 #screenModeList{top:auto!important;bottom:54px!important}
-</style></head><body><div class="app" id="app"></div><script>
+</style>
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Base Quin">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"></head><body><div class="app" id="app"></div><script>
 const BRL=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
 const BRL4=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});
 const BRLPTAX=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:4,maximumFractionDigits:4});
@@ -1407,4 +1411,14 @@ function initMovableSettingsButtons(){}
 layout();
 initMovableSettingsButtons();
 initScreenMode();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('./service-worker.js')
+      .catch(function (erro) {
+        console.warn('Não foi possível ativar o modo offline.', erro);
+      });
+  });
+}
 </script></body></html>
