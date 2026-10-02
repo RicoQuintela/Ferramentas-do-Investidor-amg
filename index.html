@@ -19,7 +19,7 @@ button,input,select{font:inherit}
 button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 input:disabled,select:disabled,button:disabled{background:#d6d6d6!important;color:#666!important;opacity:1;cursor:not-allowed}
 .app{max-width:480px;min-height:100vh;min-height:100svh;margin:auto;background:#f5f5f5;position:relative;overflow-x:hidden}
-
+ 
 /* ---------- CAPA / TELA INICIAL ---------- */
 .splash{
   min-height:100vh;min-height:100svh;
@@ -62,7 +62,7 @@ input:disabled,select:disabled,button:disabled{background:#d6d6d6!important;colo
 .header-logo{display:block;object-fit:contain;object-position:center;flex-shrink:0;filter:drop-shadow(0 2px 6px rgba(237,17,28,.28))}
 .header-logomark{display:block;flex-shrink:0}
 .header-word{font-family:'Anton',Impact,'Arial Black',sans-serif;text-transform:uppercase;line-height:1;display:flex;align-items:baseline;gap:0}
-
+ 
 /* ---------- HEADER / APP SHELL ---------- */
 .header{position:sticky;top:0;z-index:4;background:linear-gradient(180deg,#0b0b0b 0%,#151515 100%);color:#fff;padding:calc(10px + env(safe-area-inset-top)) 18px 10px;display:flex;align-items:center;justify-content:center;gap:10px;min-height:calc(68px + env(safe-area-inset-top));border-bottom:2px solid var(--red-dark);box-shadow:0 3px 12px rgba(0,0,0,.2)}
 .header .header-logo{position:absolute;left:50%;transform:translateX(-50%)}
@@ -154,7 +154,7 @@ input:disabled,select:disabled,button:disabled{background:#d6d6d6!important;colo
 .simple-date-picker{display:grid;grid-template-columns:.8fr .8fr 1.2fr;gap:4px;margin-top:auto}
 .simple-date-picker select{min-height:48px;padding:8px 4px;font-size:13px;color:#666;font-weight:800;text-align:center;background:#fff;appearance:auto;-webkit-appearance:menulist}
 .simple-date-picker select.date-selected{color:#1261d6}
-
+ 
 .switch{display:flex;gap:5px}
 .switch button{flex:1;min-height:46px;padding:11px;border:1px solid #ccc;border-radius:8px;background:#eee;font-weight:800;font-size:12.5px;cursor:pointer}
 .switch button.active{background:var(--red);color:#fff;border-color:var(--red)}
@@ -275,7 +275,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}
 }
-
+ 
 .direct-date-entry{display:grid;grid-template-columns:1fr 1fr 1.35fr;gap:6px}
 .direct-date-entry select,.direct-date-entry input{width:100%;min-height:48px;padding:8px 6px;border:1px solid #c9cdd1;border-radius:9px;background:#fff;color:#666;text-align:center;font-size:16px;cursor:pointer}
 .direct-date-entry select:focus,.direct-date-entry input:focus{border-color:var(--red);box-shadow:0 0 0 2px #ed111c20;outline:none}
@@ -299,7 +299,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 #cdStartDisplay,#cdEndDisplay{background:#fff;color:#666}
 #cdres{background:#fff;color:#111;border:1px solid #dedede;box-shadow:0 2px 8px rgba(0,0,0,.07)}
 #cdres .line{color:#555;border-bottom-color:#e2e2e2}
-
+ 
 /* Tela e conteúdo do botão mais importante — replicados do projeto Despesas Recorrentes */
 .important-button{background:#eeeeF1!important;color:#1769ff!important;border-color:#1769ff!important;font-size:9px;padding:5px 8px}
 #app.theme-dark .important-button{background:#eeeeF1!important;color:#1769ff!important;border-color:#1769ff!important}
@@ -317,46 +317,46 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 #app.theme-dark .important-blank-stage .donation-content{color:#111;background:#fff}
 #app.theme-dark .important-blank-stage .donation-content strong,#app.theme-dark .important-blank-stage .donation-content span{color:#111}
 @media(max-height:600px){.important-large-button{height:78%;margin-top:10%}.donation-content{padding:12px}}
-
+ 
 /* Ajustes solicitados: contornos mais finos e navegação inferior branca */
 .important-large-button{border-width:2px}
 .donation-content{border-width:1px}
 .bottom button{color:#fff}
 .bottom button.active{color:#ed111c}
-
+ 
 /* Contorno preto ainda mais discreto */
 .important-large-button{border-width:1px}
 .donation-content{border-width:.5px}
-
+ 
 /* A mensagem permanece como painel informativo, sem o botão azul externo */
 .important-large-panel{display:block;width:92%;height:82%;margin:9% auto 0;padding:0;border:0;background:transparent;box-shadow:none}
-
+ 
 /* Remove a borda preta do painel da mensagem */
 .donation-content{border:0!important}
-
+ 
 /* Nenhum contorno preto nos elementos da tela de apoio */
 .donation-content,.important-screen-close{border:0!important;outline:none!important}
-
+ 
 /* Desloca os elementos da tela de apoio para baixo */
 .important-screen-close{top:36px}
 .important-large-panel{margin-top:calc(9% + 24px)}
 @media(max-height:600px){.important-large-panel{margin-top:calc(10% + 20px)}}
-
+ 
 /* Quadrante branco menor; texto e logotipo mantêm o tamanho anterior */
 .important-large-panel{width:82%;height:72%}
 .donation-content img.donation-logo-image{width:min(220px,calc(66.24vw - 47px))}
-
+ 
 /* Margem ao redor do quadrante um pouco menor e painel deslocado para baixo */
 .important-large-panel{width:86%;height:75%;margin-top:calc(9% + 42px)}
 @media(max-height:600px){.important-large-panel{margin-top:calc(10% + 32px)}}
-
+ 
 /* Aumenta o espaço branco abaixo do logotipo */
 .donation-content{padding-bottom:32px}
-
+ 
 /* Elimina o vazio inferior: o quadrante branco se ajusta à altura do conteúdo */
 .important-large-panel{height:auto!important;min-height:0}
 .donation-content{height:auto!important;min-height:0;overflow:visible}
-
+ 
 /* Quatro colunas iguais deixam os ícones do rodapé com espaçamento uniforme */
 .bottom{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch}
 .bottom button{text-align:center;min-width:0}
@@ -375,24 +375,24 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 .blank-screen .screen-background-button{height:86%}
 .blank-screen .important-button{position:absolute;left:50%;bottom:calc(8% + env(safe-area-inset-bottom));transform:translateX(-50%)}
 .blank-screen-title{font-family:'Anton',Impact,'Arial Black',sans-serif!important;font-weight:400!important;font-size:20px!important;letter-spacing:.35px!important;color:#19a7ff!important;text-shadow:0 0 8px rgba(25,167,255,.65)!important;font-style:normal!important}
-
+ 
 /* Botões de configurações arrastáveis em telas móveis e desktop */
 #blankScreenControls{position:static}
 #screenModeControl,#importantButton{touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab}
 #screenModeControl.is-dragging,#importantButton.is-dragging{cursor:grabbing}
 #screenModeButton,#importantButton{-webkit-user-select:none;user-select:none}
-
+ 
 /* Ajustes da tela de apoio e do contorno de Configurações */
 .important-screen-page{display:flex;flex-direction:column;align-items:center;justify-content:center!important}
 .important-screen-page .important-large-panel{flex:none;margin:0 auto!important;transform:translateY(-24px)!important}
 .important-screen-page .donation-content{padding-bottom:16px!important}
 .important-screen-page .important-screen-close{position:static!important;top:auto!important;left:auto!important;right:auto!important;flex:0 0 38px;margin:18px auto 0!important}
 .blank-screen-title{top:calc(7% + 12px)!important}
-
+ 
 /* Posições fixas dos controles na tela de configurações */
 #screenModeControl{position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;touch-action:manipulation;user-select:auto;cursor:default}
 #importantButton{position:absolute!important;left:50%!important;right:auto!important;top:auto!important;bottom:calc(15% + env(safe-area-inset-bottom))!important;transform:translateX(-50%)!important;touch-action:manipulation;user-select:auto;cursor:pointer}
-
+ 
 /* Setas azuis de retorno nas abas do rodapé */
 .bottom-tab-group{display:flex;align-items:stretch;min-width:0}
 .bottom-tab-button{min-width:0;flex:1!important;padding:7px 1px!important;font-size:10px!important}
@@ -400,44 +400,44 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 .bottom-back-arrow{flex:0 0 24px!important;min-width:24px;padding:0!important;display:grid;place-items:center;color:#19a7ff!important;background:transparent!important}
 .bottom-back-arrow svg{display:block;width:17px;height:17px}
 .bottom-back-arrow:active{transform:scale(.92)}
-
+ 
 /* Seta de voltar da tela de apoio: centralizada acima do contorno */
 .important-screen-page .important-screen-close{position:absolute!important;top:12px!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important;z-index:5;margin:0!important}
-
+ 
 /* Seta no fluxo da tela, logo acima e fora do quadrante branco */
 .important-screen-page .important-screen-close{position:static!important;top:auto!important;left:auto!important;right:auto!important;transform:none!important;z-index:5;flex:0 0 38px;margin:0 auto 34px!important}
-
+ 
 /* Seta azul única, ao lado esquerdo do botão Início */
 .bottom-home-group{display:flex;align-items:stretch;min-width:0}
 .bottom-home-group #bottomHome{flex:1;min-width:0}
 .bottom-home-group .bottom-back-arrow{flex:0 0 24px!important;min-width:24px;padding:0!important;display:grid;place-items:center;color:#19a7ff!important;background:transparent!important}
 .bottom-home-group .bottom-back-arrow svg{display:block;width:17px;height:17px}
 .bottom-home-group .bottom-back-arrow:active{transform:scale(.92)}
-
+ 
 /* Seta e painel de apoio elevados juntos, com o mesmo espaçamento visual */
 .important-screen-page .important-screen-close{transform:translateY(-80px)!important}
 .important-screen-page .important-large-panel{transform:translateY(-104px)!important}
-
+ 
 /* Mantém a seta e desce apenas o painel, ampliando o intervalo */
 .important-screen-page .important-screen-close{transform:translateY(-80px)!important}
 .important-screen-page .important-large-panel{transform:translateY(-84px)!important}
-
+ 
 /* Seta azul de retorno abaixo do seletor de modo de tela */
 #settingsBackArrow{position:absolute;top:calc(50% + 36px);left:50%;transform:translateX(-50%);z-index:3;display:flex;align-items:center;justify-content:center;width:38px;height:38px;padding:0;border:2px solid #168fc7;border-radius:50%;color:#168fc7;background:#fff;cursor:pointer}
 #settingsBackArrow svg{display:block;width:22px;height:22px;flex:none}
 #settingsBackArrow:active{transform:translateX(-50%) scale(.94)}
-
+ 
 /* Desce a seta de retorno das configurações em 20 px */
 #settingsBackArrow{top:calc(50% + 56px)}
-
+ 
 /* Desce mais 20 px a seta de retorno das configurações */
 #settingsBackArrow{top:calc(50% + 76px)}
-
+ 
 /* Tela de configurações contida no espaço entre cabeçalho e rodapé */
 #app.settings-open{height:100dvh;min-height:100dvh;overflow:hidden}
 #app.settings-open .blank-screen{height:calc(100dvh - 126px - env(safe-area-inset-top) - env(safe-area-inset-bottom));min-height:0;max-height:calc(100dvh - 126px - env(safe-area-inset-top) - env(safe-area-inset-bottom));overflow:hidden;flex:none}
 #app.settings-open .header{position:sticky;top:0}
-
+ 
 /* Abre as opções de modo de tela acima do botão */
 #screenModeList{top:auto!important;bottom:54px!important}
 </style>
@@ -467,19 +467,19 @@ const parseNum=s=>{
 function numericInput(el){el.value=el.value.replace(/[^0-9,.-]/g,'')}
 function formatCurrencyTyping(el){const digits=el.value.replace(/\D/g,'');if(!digits){el.value='';el.classList.remove('value-entered');return}const value=Number(digits)/100;el.value=value.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});el.classList.add('value-entered')}
 function formatValueField(el){const value=parseNum(el.value);if(Number.isFinite(value))el.value=value.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})}
-
+ 
 /* Ambiente de acesso: a validação real será conectada ao Firebase antes do APK final. */
 const TESOURO_SELIC_EXTRA_MAIOR_VENCIMENTO=0.0736;
-
+ 
 /* limpa o "0" pré-preenchido ao focar em qualquer campo numérico das calculadoras */
 document.addEventListener('focusin',e=>{const t=e.target;if(t&&t.tagName==='INPUT'&&t.type==='number'&&(t.value==='0'))t.value=''});
 document.addEventListener('focusout',e=>{const t=e.target;if(t&&t.tagName==='INPUT'&&t.type==='number'&&t.value.trim()==='')t.value='0'});
-
+ 
 /* campos preenchidos ficam azuis em todas as calculadoras */
 function markFilledField(el){if(!el||!['INPUT','SELECT','TEXTAREA'].includes(el.tagName)||el.readOnly||el.disabled)return;el.classList.toggle('value-entered',String(el.value??'').trim()!=='')}
 document.addEventListener('input',e=>markFilledField(e.target));
 document.addEventListener('change',e=>markFilledField(e.target));
-
+ 
 /* ---------- LOGO ---------- */
 function candleChart(){
   return `<svg class="splash-chart" viewBox="0 0 320 190" preserveAspectRatio="xMinYMax meet" xmlns="http://www.w3.org/2000/svg">
@@ -615,7 +615,7 @@ function headerWordmark(size){
 function settingsGearIcon(){
   return `<svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M19.4 13a7.8 7.8 0 0 0 0-2l2-1.55-2-3.46-2.36.95a7.6 7.6 0 0 0-1.73-1L15 3.4h-4l-.36 2.54a7.6 7.6 0 0 0-1.73 1l-2.36-.95-2 3.46 2 1.55a7.8 7.8 0 0 0 0 2l-2 1.55 2 3.46 2.36-.95a7.6 7.6 0 0 0 1.73 1L11 20.6h4l.36-2.54a7.6 7.6 0 0 0 1.73-1l2.36.95 2-3.46-2.05-1.55ZM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></svg>`;
 }
-
+ 
 /* ---------- LAYOUT / TELA INICIAL (CAPA) ---------- */
 function layout(){
   app.innerHTML=`
@@ -734,7 +734,7 @@ function setBottomActive(id){
     else button.removeAttribute('aria-current');
   });
 }
-
+ 
 function footerBack(){
   const activeBottom=document.querySelector('#bottom button.active')?.id;
   if(activeBottom==='bottomSettings'){showIndicators();return}
@@ -792,7 +792,7 @@ function goHomeSplash(){
   setBottomActive('bottomHome');
   document.getElementById('splash').classList.remove('hidden');
 }
-
+ 
 /* ---------- NAVEGAÇÃO ---------- */
 function menu(i,t,s,k,color){return `<div class="card menu-card" role="button" tabindex="0" aria-label="Abrir ${t}" onclick="openCalc('${k}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCalc('${k}')}">${i?`<div class="ico ${color}">${i}</div>`:''}<div><strong>${t}</strong><span>${s}</span></div><div class="arrow" aria-hidden="true">›</div></div>`}
 function initLongPressProtection(){document.querySelectorAll('#home .menu-card').forEach(card=>{let timer=null;card.addEventListener('pointerdown',event=>{if(event.button!==undefined&&event.button!==0)return;timer=setTimeout(()=>{card.dataset.longPressed='1'},450)});const clear=()=>{if(timer){clearTimeout(timer);timer=null}};card.addEventListener('pointerup',clear);card.addEventListener('pointercancel',clear);card.addEventListener('pointerleave',clear);card.addEventListener('click',event=>{if(card.dataset.longPressed==='1'){event.preventDefault();event.stopImmediatePropagation();card.dataset.longPressed='0'}},true)})}
@@ -827,7 +827,7 @@ function openCalc(k){
   document.getElementById('tabCalc').classList.add('active');document.getElementById('tabInd').classList.remove('active');
 }
 function head(t,sub,withBack=true,light=false){const bg=light?'#dedede':'#111',fg=light?'#111':'#fff',muted=light?'#555':'#ccc',border=light?'1px solid #c6c6c6':'0';return `<div class="card" style="background:${bg};color:${fg};border:${border}"><div style="display:flex;align-items:center;gap:10px">${withBack?'<button class="back" aria-label="Voltar para as calculadoras" onclick="showHome()">‹</button>':''}<span class="title">${t}</span></div><p style="color:${muted};margin:8px 0 0">${sub}</p></div>`}
-
+ 
 /* ---------- INDICADORES ---------- */
 const IND={};
 function indicatorCard(id,icon,color,label,dateId){
@@ -924,7 +924,7 @@ function startAutoRefresh(){
   },60000);
 }
 function stopAutoRefresh(){if(indicatorsTimer){clearInterval(indicatorsTimer);indicatorsTimer=null}stopCompareRatesRefresh()}
-
+ 
 /* Impede que uma atualização lenta se sobreponha à próxima. */
 async function updateIndicators(){
   if(indicatorsUpdating)return;
@@ -967,7 +967,7 @@ async function updateIndicatorsData(){
     document.getElementById('selicVal').textContent='Indisponível';
     document.getElementById('selicDate').textContent='Falha ao consultar BCB';
   }
-
+ 
   // Inflação (IPCA) mensal + acumulado 12 meses
   try{
     const mensalArr=await bcbSeries(433,1);
@@ -983,7 +983,7 @@ async function updateIndicatorsData(){
     document.getElementById('inflacaoVal').textContent='Indisponível';
     document.getElementById('inflacaoDate').textContent='Tente atualizar novamente';
   }
-
+ 
   // Poupança mensal + anual estimado
   try{
     const [poup]=await bcbSeries(195,1);
@@ -997,7 +997,7 @@ async function updateIndicatorsData(){
     document.getElementById('poupVal').textContent='Indisponível';
     document.getElementById('poupDate').textContent='Tente atualizar novamente';
   }
-
+ 
   // CDI (taxa diária anualizada base 252)
   try{
     const [cdi]=await bcbSeries(12,1);
@@ -1011,7 +1011,7 @@ async function updateIndicatorsData(){
     document.getElementById('cdiDate').textContent='Falha ao consultar BCB';
     document.getElementById('copomDate').textContent='Próxima reunião do Copom: '+proximaReuniaoCopom();
   }
-
+ 
   // Dólar comercial — séries oficiais de compra e venda do Banco Central.
   // O SGS tem CORS habilitado, evitando a falha de consulta direta no navegador.
   try{
@@ -1028,7 +1028,7 @@ async function updateIndicatorsData(){
     document.getElementById('dolarVal').textContent='Indisponível';
     document.getElementById('dolarDate').textContent='Sem conexão com o BCB — toque em Atualizar';
   }
-
+ 
   // Ouro e Bitcoin: fontes com CORS habilitado para uso direto no navegador.
   const [ouroResult,btcResult]=await Promise.allSettled([
     fetchJSON('https://api.gold-api.com/price/XAU',{retries:1}),
@@ -1051,7 +1051,7 @@ async function updateIndicatorsData(){
     document.getElementById('btcVal').textContent='Indisponível';
     document.getElementById('btcDate').textContent='Sem conexão com a API — toque em Atualizar';
   }
-
+ 
   // Índice Ibovespa: tenta uma fonte compatível com navegador e preserva
   // o último valor válido quando uma fonte estiver temporariamente indisponível.
   try{
@@ -1065,9 +1065,9 @@ async function updateIndicatorsData(){
     }
   }
 }
-
+ 
 const IBOV_CACHE_KEY='basequin.ibov.v2';
-
+ 
 function renderIbovMeta(meta,fromCache){
   const valor=Number(meta.regularMarketPrice);
   if(!Number.isFinite(valor)) throw new Error('valor Ibovespa inválido');
@@ -1085,7 +1085,7 @@ function renderIbovMeta(meta,fromCache){
     try{localStorage.setItem(IBOV_CACHE_KEY,JSON.stringify({...meta,savedAt:Date.now()}))}catch(e){}
   }
 }
-
+ 
 function restoreIbovCache(){
   try{
     const cache=JSON.parse(localStorage.getItem(IBOV_CACHE_KEY)||'null');
@@ -1093,7 +1093,7 @@ function restoreIbovCache(){
   }catch(e){}
   return false;
 }
-
+ 
 function parseYahooPayload(body){
   if(body?.chart?.result?.[0]?.meta)return body;
   const text=typeof body==='string'?body:body?.contents;
@@ -1104,7 +1104,7 @@ function parseYahooPayload(body){
     try{return JSON.parse(text.slice(start,text.lastIndexOf('}')+1))}catch(e2){return null}
   }
 }
-
+ 
 async function fetchText(url,opts={}){
   const retries=opts.retries??0,timeout=opts.timeout??9000;
   let lastErr;
@@ -1121,7 +1121,7 @@ async function fetchText(url,opts={}){
   }
   throw lastErr;
 }
-
+ 
 // Yahoo não libera CORS direto no navegador. As fontes são consultadas
 // em paralelo para que uma instabilidade não impeça a atualização automática.
 async function fetchIbovMeta(){
@@ -1145,7 +1145,7 @@ async function fetchIbovMeta(){
   }catch(e){}
   return null;
 }
-
+ 
 // Busca o boletim PTAX mais recente do Banco Central, retrocedendo dia a dia
 // (necessário em fins de semana, feriados ou antes da abertura do primeiro boletim).
 async function fetchPTAXAtual(){
@@ -1162,7 +1162,7 @@ async function fetchPTAXAtual(){
     tipoBoletim:'Cotação diária'
   };
 }
-
+ 
 /* ---------- CALCULADORAS ---------- */
 function updateConsiderTreasuryPanel(){
   const baseBox=document.getElementById('cmpConsiderTreasuryBase'),extraBox=document.getElementById('cmpConsiderTreasuryExtra'),totalBox=document.getElementById('cmpConsiderTreasuryRate');
@@ -1314,7 +1314,7 @@ function irRate(days){
   if(days<=720)return .175;
   return .15;
 }
-
+ 
 function calcCompound(){
   const p=n('ci'),a=n('cm'),rateInput=n('cr'),periodInput=n('cn');
   const years=document.getElementById('cya').classList.contains('active');
@@ -1399,15 +1399,15 @@ function calcMortgage(){
 }
 function toggle(a,b){document.getElementById(a).classList.add('active');document.getElementById(b).classList.remove('active')}
 function clearForm(k){let ids={compound:['ci','cm','cr','cn'],rule:['ra','rb','rc'],countdown:['cdStart','cdEnd'],rates:['ri'],loan:['li','lr','ln'],mortgage:['mi','me','mr','mn']};(ids[k]||[]).forEach(id=>{let e=document.getElementById(id);if(e){e.value=['ci','cm','li','mi','me'].includes(id)?'0,00':(k==='countdown'?'':0);e.classList.remove('value-entered');if(k==='countdown'){e.classList.remove('date-selected');e.style.color='#666'}}});if(k==='compound'){document.getElementById('cir').value='taxable';document.getElementById('cres').innerHTML='<b>Resultado líquido estimado</b><div class="big">R$ 0,00</div><div class="line"><span>Valor bruto</span><b>R$ 0,00</b></div><div class="line"><span>Valor total investido</span><b>R$ 0,00</b></div><div class="line"><span>IR estimado</span><b>R$ 0,00</b></div><div class="line"><span>Rendimento líquido</span><b>R$ 0,00</b></div>';}if(k==='rule')document.getElementById('rres').textContent='D = 0';if(k==='countdown'){['cdStart','cdEnd'].forEach(id=>{['Day','Month','Year'].forEach(part=>{const d=document.getElementById(id+part);if(d){d.value='';d.classList.remove('value-entered')}});const display=document.getElementById(id+'Display');if(display){display.textContent='Selecionar data';display.classList.remove('value-entered')}});document.getElementById('cdCalendar')?.classList.add('hidden')}if(k==='countdown')document.getElementById('cdres').innerHTML='<b>Resultado detalhado</b><div class="line"><span>Resultado em dias</span><b>0 dias</b></div><div class="line"><span>Resultado em meses e dias</span><b>0 meses e 0 dias</b></div><div class="line"><span>Resultado em anos, meses e dias</span><b>0 anos, 0 meses e 0 dias</b></div>';if(k==='simple')simpleClear();if(k==='rates')document.getElementById('rateres').innerHTML='<b>Taxa equivalente</b><div class="big">0,00%</div>';if(k==='loan')document.getElementById('loanres').innerHTML='<b>Resultado</b><div class="big">R$ 0,00</div>';if(k==='mortgage')document.getElementById('mres').innerHTML='<b>Resultado</b><div class="big">R$ 0,00</div>';document.querySelectorAll('#calc input,#calc select,#calc textarea').forEach(el=>el.classList.remove('value-entered'))}
-
-
+ 
+ 
 const movableSettingsPositions={
   screenModeControl:'basequin-settings-screen-mode-position',
   importantButton:'basequin-settings-important-button-position'
 };
 function restoreMovableSettingsButtons(){}
 function initMovableSettingsButtons(){}
-
+ 
 layout();
 initMovableSettingsButtons();
 initScreenMode();
@@ -1422,3 +1422,38 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script></body></html>
+
+manifest.json — configuração de instalação PWA
+{
+  "id": "./",
+  "name": "Ferramentas do Investidor",
+  "short_name": "Ferramentas do Investidor",
+  "description": "Ferramentas do Investidor",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#e50914",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
