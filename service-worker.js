@@ -1,7 +1,7 @@
-const SHELL_CACHE = 'investidor-amg-shell-v2';
+const SHELL_CACHE = 'investidor-amg-shell-v3';
 const DATA_CACHE = 'investidor-amg-data-v1';
 const APP_ROOT = new URL('./', self.registration.scope);
-const APP_INDEX = new URL('index.html', APP_ROOT).href;
+const APP_INDEX = new URL('index.html?v=20261002-0829', APP_ROOT).href;
 
 const SHELL_FILES = [
   APP_ROOT.href,
@@ -54,16 +54,16 @@ self.addEventListener('fetch', event => {
     if (request.mode === 'navigate') {
       event.respondWith((async () => {
         try {
-          const response = await fetch(request);
+          const response = await fetch(new Request(APP_INDEX, { cache: 'reload' }));
           if (response.ok) {
             const cache = await caches.open(SHELL_CACHE);
             await cache.put(APP_INDEX, response.clone()).catch(() => {});
           }
           return response;
         } catch (error) {
-          return await caches.match(request)
+          return await caches.match(APP_INDEX)
+            || await caches.match(request)
             || await caches.match(APP_ROOT.href)
-            || await caches.match(APP_INDEX)
             || Response.error();
         }
       })());
