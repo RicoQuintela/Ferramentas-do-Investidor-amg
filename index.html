@@ -1281,10 +1281,13 @@ function syncInvestmentType(which){
   name.classList.toggle('value-entered',name.value!=='');
   indicator.classList.toggle('value-entered',indicator.value!=='');
   const isTreasury=name.value==='Tesouro Selic',isCdiOrFixed=['CDB','LCI','LCA'].includes(name.value),rateMonths=document.getElementById('cmpRatePeriodMonths'+which),rateYears=document.getElementById('cmpRatePeriodYears'+which);
+  indicator._allCompareOptions??=[...indicator.options].map(option=>{const copy=option.cloneNode(true);copy.disabled=false;return copy});
+  const chosen=indicator.value,allowed=isCdiOrFixed?indicator._allCompareOptions.filter(option=>['annual','cdi'].includes(option.value)):indicator._allCompareOptions;
+  indicator.replaceChildren(...allowed.map(option=>{const copy=option.cloneNode(true);copy.disabled=false;return copy}));
   if(isTreasury)indicator.value='tesouro';
-  else if(isCdiOrFixed&&!['annual','cdi'].includes(indicator.value))indicator.value='cdi';
-  else if(indicator.value==='tesouro')indicator.value='cdi';
-  [...indicator.options].forEach(option=>{option.disabled=(isCdiOrFixed&&!['annual','cdi'].includes(option.value))});
+  else if(isCdiOrFixed&&!['annual','cdi'].includes(chosen))indicator.value='cdi';
+  else if(chosen==='tesouro')indicator.value='cdi';
+  else indicator.value=chosen;
   indicator.disabled=isTreasury;
   if(rateMonths&&rateYears){rateMonths.disabled=isTreasury;if(isTreasury){toggle('cmpRatePeriodYears'+which,'cmpRatePeriodMonths'+which)}else{rateMonths.disabled=false}}
   if(treasuryBox)treasuryBox.classList.toggle('hidden',!isTreasury);
