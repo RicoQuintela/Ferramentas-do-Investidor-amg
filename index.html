@@ -489,6 +489,11 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 body:has(#importantBlankStage.active) #header #mareGlobalAdBanners{display:none!important}
 body:has(#importantBlankStage.active) #header{padding-top:0!important;padding-bottom:0!important;min-height:0!important}
 </style>
+
+<style id="ocultar-logo-superior-aba-apoio">
+/* Não exibir o logotipo do cabeçalho atrás da tela de apoio. */
+body:has(#importantBlankStage.active) #header .header-logo{visibility:hidden!important}
+</style>
 </head><body><div class="app" id="app"></div><script>
 const BRL=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
 const BRL4=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});
