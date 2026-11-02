@@ -478,7 +478,12 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Ferramentas do Investidor">
-<meta name="apple-mobile-web-app-status-bar-style" content="black"></head><body><div class="app" id="app"></div><script>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<style id="important-button-size-preview">
+/* Apenas o botão de destaque em Configurações. */
+#importantButton{font-size:13px!important;min-height:48px!important;min-width:260px!important;max-width:calc(100% - 40px)!important;padding:10px 16px!important;border-radius:10px!important}
+</style>
+</head><body><div class="app" id="app"></div><script>
 const BRL=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
 const BRL4=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});
 const BRLPTAX=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:4,maximumFractionDigits:4});
