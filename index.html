@@ -483,6 +483,12 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 /* Apenas o botão de destaque em Configurações. */
 #importantButton{font-size:13px!important;min-height:48px!important;min-width:260px!important;max-width:calc(100% - 40px)!important;padding:10px 16px!important;border-radius:10px!important}
 </style>
+
+<style id="hide-ads-important-tab">
+/* Oculta somente a faixa de anúncios enquanto a aba de apoio está aberta. */
+body:has(#importantBlankStage.active) #header #mareGlobalAdBanners{display:none!important}
+body:has(#importantBlankStage.active) #header{padding-top:0!important;padding-bottom:0!important;min-height:0!important}
+</style>
 </head><body><div class="app" id="app"></div><script>
 const BRL=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
 const BRL4=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});
